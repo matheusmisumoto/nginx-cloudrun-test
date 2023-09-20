@@ -3,8 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <title>Nginx Container Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body { 
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        color: #EFEFEF;
+        background-color: #121214;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      a {
+        color: #0071C5;
+      }
+      main {
+        text-align: center;
+        padding: 5vw;
+        background-color: #202024;
+        border-radius: 1rem;
+      }
+      h1 { 
+        font-size: 4rem;
+      }
+      p {
+        line-height: 1.6em;
+      }
+      footer {
+        margin-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>Nginx Container Test</h1>
-    <p>Se você está vendo essa página, é porque deploy no Google Cloud Run foi executado com sucesso.</p>
+      <main>
+        <h1>Sucesso!</h1>
+        <p>O deploy do servidor Nginx no Google Cloud Run foi executado com sucesso.</p>
+      </main>
+      <footer>
+        <p>Developed with ☕ by <a href="https://matheusmisumoto.dev/" target="_blank" rel="author">Matheus Misumoto</a> in Santos, Brazil.</p>
+      </footer>
   </body>
